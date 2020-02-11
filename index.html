@@ -1,31 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head> 
-		<meta charset="utf-8">
+<html>
+<head>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+	<script>
+	$(document).ready(function() {
+    $("#buttonsubmit").click(function() {
+        $(heading1).animate({ 
+            fontSize: "2.5em", 
+         }, 1500 );
+         $(heading1).animate({ 
+            fontSize: "1.5em"});
+        $(heading1).css('color', 'magenta');
+        $(Megan).css({"border-color": "magenta", 
+        "border-weight":"5px", 
+        "border-style":"solid"});
+    });
+});
+		</script>
+			<meta charset="utf-8">
 		<title> CIS 128 </title>
 		<link href="StyleSheet.css" rel="stylesheet">
 	</head>
 	<body>
-		<h1> CIS 128 Mobile Web App Development </h1> <br/>
-		<p> <img src="Megan.jpg" alt="Megan Tanner" width="200" height="175">
+		<div>
+			<h1 id="heading1"> CIS 128 Mobile Web App Development </h1> <br/>
+			</div>
+		<div>
+			
+			<p id="p1"> <img src="Megan.jpg" id="Megan" width="200" height="175">
 		  Hi, my name is Megan Tanner. I like to travel and I love photography. 
 			 I am married with three children. I am from East Tennessee.</p>
-		
-			<p> This class is exciting to me. First, it fulfills a requirement 
+		</div>
+		<div>
+			<p id="p2"> This class is exciting to me. First, it fulfills a requirement 
 				for my degree plan. Second, it is something I've always wondered 
 				about and wanted to know how to do. </p>
-		
+				</div>
+		<div> 
 		<h2> Technologies For This Class </h2>
 			<ul> 
 				<li> HTML </li>
 				<li> CSS </li>
 				<li> JavaScript </li>
 			</ul>
+		</div>
+		<div> 
 		<h2> Resources </h2>
 			<ul>
 				<li> <a href="https://www.w3schools.com/">w3schools</a> Is very helpful when learning how to code. It has so much information. The examples and try it out sections are great. </li> 
 				<li> <a href="https://github.com/">Github</a> Is one of the most widely used code repositories wth all kinds fo projects. Github will host your code, even make it public to share your knowledge. </li> 
 			</ul> 
-		
+		</div>	
+		<div>
+			<button id="buttonsubmit" type="submit" value="release">Animate</button>
+		</div>
 	</body>
 </html>
