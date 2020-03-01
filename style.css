@@ -121,23 +121,12 @@
 		 
 		}
 	
-	/* The Animation code */
-	@keyframes funblock {
-		0%   {background-color:pink; width: 25%}
-		25%  {background-color:rgb(224, 90, 224); left: 50px; width: 50%}
-		50%  {background-color:rgb(180, 119, 238);left: 100px; width: 75% }
-		75%  {background-color:rgb(83, 199, 83); left: 50px; width: 100%}
-		100% {background-color:rgb(221, 103, 103); width:100% }
-	}
 	div#footer{
 		background-color:#c4d5d9;
 		margin:0 auto;
 		padding:15px;
 		text-align:center;
 		width:100%;
-		animation-name: funblock;
-		animation-duration: 5s;
-		position: relative;
 		 
 	}
 	.float-left{
