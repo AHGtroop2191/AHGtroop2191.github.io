@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8" />
+      
+        <title>Location</title>
+        <script>
+            function showPosition() {
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                    document.getElementById("result").innerHTML = positionInfo;
+                });
+            } else {
+                alert("Sorry, your browser does not support HTML5 geolocation.");
+            }
+        }
+            </script>
+      </head>
+      <body>
+        <div class="jumbotron text-center">
+          <h1>Location</h1>
+        </div>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
+        </div>
+        <script>
+        $(function(){
+        $("#nav-placeholder").load("navbar.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+        <body>
+            <div id="result">
+                <!--Position information will be inserted here-->
+            </div>
+            <button type="button" onclick="showPosition();">Show Position</button>
+            
+
+        </body>
+
