@@ -22,7 +22,7 @@
         $(function(){
         $("#nav-placeholder").load("navbar.html");
         });
-        function showPosition() {
+        $function showPosition() {
             if(navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
