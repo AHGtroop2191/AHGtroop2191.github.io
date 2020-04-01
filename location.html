@@ -9,18 +9,7 @@
         <meta charset="UTF-8" />
       
         <title>Location</title>
-        <script>
-            function showPosition() {
-            if(navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
-                    document.getElementById("result").innerHTML = positionInfo;
-                });
-            } else {
-                alert("Sorry, your browser does not support HTML5 geolocation.");
-            }
-        }
-            </script>
+        
       </head>
       <body>
         <div class="jumbotron text-center">
@@ -33,13 +22,25 @@
         $(function(){
         $("#nav-placeholder").load("navbar.html");
         });
-        <!--end of Navigation bar-->
+        function showPosition() {
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                    document.getElementById("result").innerHTML = positionInfo;
+                });
+            } else {
+                alert("Sorry, your browser does not support HTML5 geolocation.");
+            }
+        }</script>
         <body>
+           
+         
+            
             <div id="result">
                 <!--Position information will be inserted here-->
             </div>
             <button type="button" onclick="showPosition();">Show Position</button>
-          </script>    
+        
     
 
         </body>
