@@ -25,7 +25,16 @@
 		letter-spacing:.04em; /* letter spacing sets the horizontal spacing (kerning) between letters in a block of text. */
 		line-height:21px; /* line height sets the vertical spacing between lines of text. */
 	}
-		
+	.jumbotron {
+ 
+		  padding: 2rem 1rem;
+ 
+		  margin-bottom: 2rem;
+
+		  background-color: #e9ecef;
+
+		  border-radius: 0.3rem;	
+	}
 	.header{
 		padding: 60px;
   		text-align: center;
