@@ -47,9 +47,16 @@
 		height: auto;
 		 
 				}
+	#bannerimage {
+  width: 100%;
+  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+  height: 405px;
+  background-color: purple;
+  background-position: center;
+}
 	div#logo{
 		background-color:#00000; /* a more specific way to set a background color */
-		background-image:url(AHG_2_Color_Horizontal_Logo_on_white-01.jpeg?raw=true); /* sets a background image in the header and the position it should sit */
+		background-image:url(banner1.jpeg?raw=true); /* sets a background image in the header and the position it should sit */
 		background-repeat:no-repeat; /* sets a background image to repeat, repeat-x, repeat-y or not at all as written in this rule */
 		background-position:left bottom;/* sets a background image position */
 		-webkit-border-bottom-right-radius: 4px;
