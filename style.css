@@ -26,6 +26,13 @@
 		line-height:21px; /* line height sets the vertical spacing between lines of text. */
 	}
 	.jumbotron {
+    	background-image: "banner1.jpg";
+    background-size: cover;
+  -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+      
  
 		  /*padding: 2rem 1rem;
  
